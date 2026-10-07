@@ -1,0 +1,64 @@
+## Build results and artifacts
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
+publish/
+
+## Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+## JetBrains Rider & ReSharper
+.idea/
+*.DotSettings.user
+_ReSharper*/
+*.resharper
+*.resharper.user
+
+## Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## Test & Code Coverage
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+## NuGet
+*.nupkg
+*.snupkg
+**/packages/
+!**/packages/build/
+project.lock.json
+project.assets.json
+
+## Sensitive & Environment Files
+*.local.json
+appsettings.*.local.json
+secrets.json
+.env
+.env.*
+!.env.example
+
+## Crash dumps and symbols
+*.dmp
+*.mdmp
+*.pdb
+
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes

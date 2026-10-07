@@ -1,0 +1,47 @@
+@LoginService_HostAddress = http://localhost:5170
+
+POST {{LoginService_HostAddress}}/api/users
+Content-Type: application/json
+
+{
+  "username": "alex",
+  "email": "alex@example.com",
+  "password": "secretPassword123"
+}
+
+###
+
+POST {{LoginService_HostAddress}}/api/users/login
+Content-Type: application/json
+
+{
+  "username": "alex",
+  "password": "secretPassword123"
+}
+
+###
+
+GET {{LoginService_HostAddress}}/api/users
+Accept: application/json
+
+###
+
+GET {{LoginService_HostAddress}}/api/users/1
+Accept: application/json
+
+###
+
+PUT {{LoginService_HostAddress}}/api/users/1
+Content-Type: application/json
+
+{
+  "username": "alex_updated",
+  "email": "alex_new@example.com",
+  "password": "newSecretPassword456"
+}
+
+###
+
+DELETE {{LoginService_HostAddress}}/api/users/1
+
+###
